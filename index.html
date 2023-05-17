@@ -27,8 +27,8 @@
         
        <section class="home">
             <div class="home-content">
-                <h1>Hi ! <br>I'm Tobias Ponce de León</h1>
-                <h3>Student Programmer</h3>
+                <h1>Hi ! <br> I'm <span class="auto-type"></span></h1>
+                    <h3>Student Programmer</h3>
                 <p>Since I was a little kid, I've always wanted to make videogames as I'm a huge fan of every single one from indies made by a single person to GTA, FIFA, etc. 
                     I also love designing websites and I do it as a hobby. I dream to become a Fullstack or Game developer.</p>
                 <div class="btn-box">
@@ -214,5 +214,17 @@
                 <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
             </div>
        </footer>
+
+       <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+       <script>
+           var typed= new Typed(".auto-type",{
+               strings: ["Tobias Ponce de León", "Argentinian", "17", "a Coder" ],
+               typeSpeed : 150,
+               backSpeed : 150,
+               loop: true
+           })
+       </script>
+
     </body>
 </html>

@@ -7,24 +7,39 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/*COMBINACIONES*/
-/*#081b29 y #00abf0*/
-/*#1d1d1d y #FFCE32*/
-/*#1d1d1d y #EF036C*/
-/*#1d1d1d y #FE3A4A*/
-/*#040303 y #950101*/
-/*#040303 y #CF0A0A*/
+/*DEFAULT Text COLOR #ededed*/
+
+/*COMBINACIONES :  BG - MainColor - SecondBG*/
+
+/*#081b29 y #00abf0 y #112e42*/
+/*#1d1d1d y #FFCE32 y #040303*/
+/*#1d1d1d y #EF036C y #040303*/
+/*#1d1d1d y #FE3A4A y #040303*/
+/*#040303 y #950101 y #1d1d1d*/
+/*#040303 y #CF0A0A y #1d1d1d*/
+
+/*MAMI*/
+
+/*#0C134F y #5C469C y #1D267D*/
+/*#212A3E y #FE3A4A y #394867*/
+/*#454545 y #FF6000 y #1d1d1d*/
+/*#040303 y #C69749 y #282A3A*/
+
+/*Dark mode Palettes*/
+
+/*#040303 y #0ef6cc y #1d1d1d*/
+
 
 :root{
-    --bg-color: #081b29;
-    --second-bg-color: #112e42;
-    --text-color: #ededed;
-    --main-color: #00abf0;
+    --bg-color: #454545 ;
+    --second-bg-color: #1d1d1d;
+    --text-color: #fef4f4 ;
+    --main-color:  #FF6000;
 
 }
 
 body {
-    background: var(--bg-color);
+   /* background: var(--bg-color);*/
     color: var(--text-color);
 }
 
@@ -72,7 +87,7 @@ body {
     text-decoration: none;
     font-weight: 500;
     margin-left: 40px;
-    transition: .3s;
+    transition: .6s;  
 }
 
 .navbar a:hover,
@@ -82,6 +97,10 @@ body {
 }
 
 .home {
+    background: url('file:///D:/User/Downloads/layered-peaks-haikei.svg') no-repeat; 
+  /*  background: url('images/bgOrange.png') no-repeat;*/
+    background-size: cover;
+    background-position: center;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -289,8 +308,8 @@ body {
 .home-imgHover{
     position: absolute;
     top: 0;
-    right: 30px;
-    width: 500px;
+    right: 0;
+    width: 700px;
     height: 100%;
     background: transparent;
     transition: 3s;
@@ -564,6 +583,7 @@ span {
 /**/
 
 .contact{
+    background: var(--bg-color);
     padding-top: 5rem;
     min-height: auto;
     padding-bottom: 10rem;
