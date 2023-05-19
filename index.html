@@ -121,82 +121,73 @@
 
       <!--SECCION PORTFOLIO-->
 
-      <section class="portfolio" id="portfolio">
+      <section class="portfolio">
         <h2 class="heading">My <span>Portfolio</span></h2>
-
-        <div class="portfolio-row">
-            <div class="portfolio-column">
-                <h3 class="title">Sniper Monkey</h3>
-                <div class="portfolio-box">
-                    <div class="portfolio-content">
-                        <img src="images/monkey.jpeg" alt="">
-                        <p>Static shooter made with c++ the first year of learning the language. You're a monkey that has to kill others from a roof and collect some upgrades such as night vision, double points and more!</p>
-                        <br><br><a href="https://github.com/Tobixpdl/SniperMonkey.git" target="_blank">View</a>
+        <div class="mega-container">
+           <div class="container">
+             <div class="box-portfolio" style="--i:0;">
+                 <i></i>
+                  <div class="content">
+                     <img src="images/background1.jpg" alt="">
+                        <h3>Sniper Monkey<br><span>C++ Game</span></h3>
+                         <p>Static shooter made with c++ the first year of learning the language. You're a monkey that has to kill others from a roof and collect some upgrades such as night vision, double points and more!</p> 
+                        <a href="https://github.com/Tobixpdl/SniperMonkey.git" target="_blank">View Git</a>
                     </div>
-                </div>
-            </div>
-            <div class="portfolio-column">
-                <h3 class="title">C# WinForms</h3>
-                <div class="portfolio-box">
-                    <div class="portfolio-content">
-                        <img src="images/monkey.jpeg" alt="">
-                        <p>This is a project for the university, it's a combination of SQL and Winform in C# in order to do a app for a market that add, removes and modifies its articles</p> 
-                        <br><br><a href="https://github.com/MarcosZorzoli/TPWinForm_Equipo20" target="_blank">View</a>
-                    </div>
-                </div>
-            </div>
-                <div class="portfolio-column">
-                    <h3 class="title">My Portfolio</h3>
-                    <div class="portfolio-box">
-                        <div class="portfolio-content">
-                            <img src="images/portfolioIMG.jpg" alt="" class="img3">
-                        <p>This is my Portfolio, only used for testing.</p>
-                        <br><br><a href="https://tobixpdl.github.io/Portfolio/" target="_blank">View</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-                      
-
-
+               </div>
+              <div class="box-portfolio" style="--i:1;">
+                  <i></i>
+                  <div class="content">
+                      <img src="images/Winform1.jpg" alt="">
+                     <h3>Articles database<br><span>C# Winforms</span></h3>
+                      <p>This is a project for the university, it's a combination of SQL and Winform in C# in order to do a app for a market that add, removes and modifies its articles.</p>
+                      <a href="https://github.com/Tobixpdl/SniperMonkey.git" target="_blank">View Git</a>
+                  </div>
+               </div>
+              <div class="box-portfolio" style="--i:2;">
+                  <i></i>
+                  <div class="content">
+                        <img src="images/portfolioIMG1.jpg" alt="">
+                       <h3>Portfolio<br><span>HTML/CSS/JavaScript</span></h3>
+                       <p>This is my Portfolio, only used for testing.</p>
+                       <a href="https://tobixpdl.github.io/Portfolio/" target="_blank">View Git</a>
+                 </div>
+              </div>
+         </div>
+    </div>
       </section>
 
-      <!--SECCION CONTACTo-->
+      <!--SECCION CONTACTO-->
 
       <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
 
-        <form action="#">
+        <form action="#" method="post">
             <div class="input-box">
                 <div class="input-field">
-                    <input type="text" placeholder="Full Name" required>
+                    <input type="text" placeholder="Full Name" id="name" required>
                     <span class="focus"></span>
                 </div>
                 <div class="input-field">
-                    <input type="text" placeholder="Email Adress" required>
+                    <input type="email" placeholder="Email Adress" id="email" required>
                     <span class="focus"></span>
                 </div>
             </div>
-
             <div class="input-box">
                 <div class="input-field">
-                    <input type="number" placeholder="Movile Number" required>
+                    <input type="number" placeholder="Movile Number" id="number">
                     <span class="focus"></span>
                 </div>
                 <div class="input-field">
-                    <input type="text" placeholder="Email Subject" required>
+                    <input type="text" placeholder="Email Subject" id="subject" required>
                     <span class="focus"></span>
                 </div>
             </div>
-
             <div class="textarea-field">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
                 <span class="focus"></span>
             </div>
-
             <div class="btn-box btns">
-                <button type="submit" data-text="Awesome" class="btn-submit">
+                <button type="submit" data-text="Awesome" class="btn-submit" id="btn-send">
                     <span class="actual-text">&nbsp;Submit&nbsp;</span>
                     <span class="hover-text" aria-hidden="true">&nbsp;Submit&nbsp;</span>
                 </button>
@@ -216,14 +207,17 @@
        </footer>
 
        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+       <script src="script.js"></script>
+       <script src="https://smtpjs.com/v3/smtp.js"></script>
 
        <script>
            var typed= new Typed(".auto-type",{
-               strings: ["Tobias Ponce de León", "Argentinian", "17", "a Coder" ],
+               strings: ["Tobias Ponce de León", "Argentinian", "19", "a Coder" ],
                typeSpeed : 150,
                backSpeed : 150,
                loop: true
            })
+           
        </script>
 
     </body>
