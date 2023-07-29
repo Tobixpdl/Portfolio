@@ -627,6 +627,13 @@ span {
     padding-bottom: 10rem;
 }
 
+.contact p{
+    width: 100%;
+    position: relative;
+    font-size: 20px;
+    margin: 20px 0 40px;
+}
+
 .contact form{
     max-width: 70rem;
     margin: 0 auto;
