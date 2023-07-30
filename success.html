@@ -17,7 +17,7 @@
         <a href="#" class="logo">Tobias.</a>
 
         <nav class="navbar">
-            <a href="#",class="active">Home</a>
+            <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#portfolio">Porfolio</a>
@@ -25,7 +25,7 @@
         </nav>
        </header>
         
-       <section class="home">
+       <section class="home" id="home">
             <div class="home-content">
                 <h1>Hi ! <br> I'm <span class="auto-type"></span></h1>
                     <h3>Student Programmer</h3>
@@ -58,19 +58,34 @@
             <img src="images/tobi31.png" alt="">
             <span class="circle-spin"></span>
         </div>
+        <h3>Student Programmer</h3>
         <div class="about-content">
-            <h3>Student Programmer</h3>
-            <p>
-                Hi there! I'm Tobias, a passionate Student Programmer from Buenos Aires, Argentina. My love for programming runs deep, and I spend at least 10 hours a day immersed in my PC, coding and exploring new technologies.
-                That doesn't mean I dont exercise as I go to the gym almost daily.
-                Since I've started in this journey, i have gained knowledge in C++, C#, .NET with Winforms, SQL, and front-end technologies like HTML and CSS.
-                Although I haven't worked in the programming industry yet, I consistently achieve exceptional results in my university subjects, holding a track record of 8 or more in every course.
-                My ultimate aspiration is to be part of the Game Development world, where I can bring my creativity and technical skills to life. However, I'm also drawn to app development and the endless possibilities it offers.
-                As a team player, I can say I'm a reliable and proactive collaborator, always completing tasks on time and according to schedule.
-                Beyond programming, I find joy in playing video games, solving Rubik's cubes, reading, and exploring my creativity by developing my own apps and video games.
-                I'm excited about the future, eager to explore new opportunities, and open to any suggestion in the programming community.
-                Thank you for stopping by and getting to know a bit about me. Feel free to reach out, and let's collaborate on something together!
-            </p>         
+            <div class="aboutBox">
+                <i class='bx bx-info-circle'></i>
+                <h4>Me, Miself & I</h4>
+               <p>
+                   Hi there! I'm Tobias, a passionate Student Programmer from Buenos Aires, Argentina. 
+                   My love for programming runs deep, I spend at least 8 hours a day coding. That doesn't mean I don't exercise as I go to the gym almost daily.
+                   Beyond programming, I also love playing and developing video games, solving Rubik's cubes and reading.
+               </p> 
+            </div>
+            <div class="aboutBox">
+                <i class='bx bx-coffee'></i>
+                <h4>Coffee</h4>
+                <p>
+                    I'm obsessed with coffee, in a good way. If you want to get to know me better, just invite me a coffee and we'll get along really fast.
+                    I have al least 2 large coffee's a day and that gets me up and ready to code!
+                </p>
+            </div>
+            <div class="aboutBox">
+                <i class='bx bxs-chevrons-up'></i>
+                <h4>Aspirations</h4>
+                <p>
+                    My ultimate aspiration is to be part of the Game Development world, where I can bring my creativity and technical skills to life. 
+                    However, I'm also drawn to app development and the endless possibilities it offers.
+                    As a team player, I can say I'm a reliable and proactive collaborator, always completing tasks on time and according to schedule.
+                </p>
+            </div>      
         </div>
       </section>
 
@@ -89,10 +104,6 @@
                             </div>
                             <h3>C++</h3>
                         </div>
-                        <p>
-                            I have a really good bases of C++. I'm comfortable working with data structures, and object-oriented programming.
-                            I've completed various projects, including <a href="#portfolio">spiderMonkey</a>, which have enhanced my problem-solving skills in C++.
-                        </p>
                     </div>
                     <div class="skillBox">
                         <div class="skillTitle">
@@ -101,10 +112,6 @@
                             </div>
                             <h3>C#</h3>
                         </div>
-                        <p>
-                            With C#, I have developed dynamic and user-friendly apps with .NET framework. Worked with Windows Forms, building an <a href="#portfolio">app for a market</a>.
-                            I'm enthusiastic about leveraging C# to create innovative solutions for real-world challenges.
-                        </p>
                     </div>
                     <div class="skillBox">
                         <div class="skillTitle">
@@ -113,10 +120,6 @@
                             </div>
                             <h3>SQL</h3>
                         </div>
-                        <p>
-                            I have some experience designing and managing relational databases, I used this in the <a href="#portfolio">Marvel API</a> and <a href="#portfolio">Buy Everything</a>.
-                            I can create complex queries, optimize database performance, and ensure data integrity.                         
-                       </p>
                     </div>
                     <div class="skillBox">
                         <div class="skillTitle">
@@ -125,10 +128,6 @@
                             </div>
                             <h3>.NET</h3>
                         </div>
-                        <p>
-                            I have utilized its powerful features to build scalable and maintainable applications such as <a href="#portfolio">Marvel API</a>. 
-                            My expertise lies in using ASP.NET to develop web applications, RESTful APIs, and integrating front-end designs with back-end functionality.
-                        </p>
                     </div>
                     <div class="skillBox">
                         <div class="skillTitle">
@@ -137,10 +136,6 @@
                             </div>
                             <h3>HTML</h3>
                         </div>
-                        <p>
-                            Some knowledge on HTML, I use this essential language to create the structure and layout of <a href="#portfolio">this page</a>. 
-                            My understanding of HTML5 besides limited, enables me to build modern and semantically structured websites. 
-                        </p>
                     </div> 
                     <div class="skillBox">
                         <div class="skillTitle">
@@ -149,10 +144,6 @@
                             </div>
                             <h3>CSS</h3>
                         </div>
-                        <p>
-                            CSS is the go-to tool for styling and beautifying web pages. My bases experience enables me to create modern and visually appealing designs. 
-                            I love designing and I will master this tool in the future.
-                        </p>
                      </div>            
                 </div>
             </div>
@@ -252,6 +243,67 @@
                loop: true
            })
        </script>
+      <script>
+        const navbarLinks = document.querySelectorAll(".navbar a");
+    
+        // Give a click event to the links
+        navbarLinks.forEach(link => {
+            link.addEventListener("click", smoothScroll);
+        });
+    
+        // Scroll Smoothly
+        function smoothScroll(e) {
+            e.preventDefault();
+    
+            // Remove the .active class from all nav links
+            navbarLinks.forEach(link => {
+                link.classList.remove("active");
+            });
+    
+            // Get the ID of the target section from the href attribute of the clicked link
+            const targetId = e.currentTarget.getAttribute("href");
+    
+            // Get the top position (offsetTop) of the target section
+            const targetPosition = document.querySelector(targetId).offsetTop;
+    
+            // Get the current scroll position of the window
+            const startPosition = window.pageYOffset;
+    
+            // Calculate the distance to scroll to reach the target section (taking header height into account)
+            const headerHeight = 80;
+            const distance = targetPosition - startPosition - headerHeight;
+    
+            // Set the duration for the smooth scroll animation (in milliseconds)
+            const duration = 1000;
+    
+            // Function to perform the smooth scroll animation
+            let start = null;
+            function step(timestamp) {
+                if (!start) start = timestamp;
+                const progress = timestamp - start;
+                window.scrollTo(0, easeInOutCubic(progress, startPosition, distance, duration));
+    
+                // Continue the animation until the duration is reached
+                if (progress < duration) {
+                    window.requestAnimationFrame(step);
+                }
+            }
+    
+            // Start the smooth scroll animation
+            window.requestAnimationFrame(step);
+    
+            // Add the .active class to the clicked navigation link
+            e.currentTarget.classList.add("active");
+        }
+    
+        // Easing function for smooth scrolling
+        function easeInOutCubic(t, b, c, d) {
+            t /= d / 2;
+            if (t < 1) return c / 2 * t * t * t + b;
+            t -= 2;
+            return c / 2 * (t * t * t + 2) + b;
+        }
+    </script>
 
     </body>
 </html>
