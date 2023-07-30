@@ -15,13 +15,16 @@
     <body>
        <header class="header">
         <a href="#" class="logo">Tobias.</a>
-
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#portfolio">Porfolio</a>
-            <a href="#contact">Contact</a>
+        <button class="hamburger" id="hamburger"><i class='bx bx-list-ul bx-rotate-180' ></i></button>
+        <nav class="navbar" id="navbar">
+            <button class="close-hamburger" id="close-hamburger"><i class='bx bx-x' ></i></button>
+            <ul class="nav-list">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Porfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
        </header>
         
@@ -342,6 +345,20 @@
             t -= 2;
             return c / 2 * (t * t * t + 2) + b;
         }
+    </script>
+    <script>
+        const nav = document.querySelector("#navbar");
+        const abrir = document.querySelector("#hamburger");
+        const cerrar = document.querySelector("#close-hamburger");
+
+        abrir.addEventListener("click", () =>{
+            nav.classList.add("visible");
+        })
+
+        cerrar.addEventListener("click", () => {
+            nav.classList.remove("visible");
+        })
+
     </script>
 
     </body>

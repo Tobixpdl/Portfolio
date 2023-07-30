@@ -79,7 +79,23 @@ body {
     animation-delay: .2s;
 }
 
-.navbar a {
+.hamburger,
+.close-hamburger{
+    display: none;
+    border: 0;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color:var(--main-color);
+    cursor: pointer;
+}
+
+
+.nav-list{
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar li a {
     font-size: 20px;
     color: var(--text-color);
     text-decoration: none;
@@ -89,8 +105,8 @@ body {
     transition: .6s;  
 }
 
-.navbar a:hover,
-.navbar a.active{
+.navbar li a:hover,
+.navbar li a.active{
     letter-spacing: 0.2em;
     color: var(--main-color);
     border-bottom: 2px solid var(--main-color);
@@ -835,5 +851,51 @@ cursor: pointer;
 @keyframes aboutSpinner {
     100%{
         transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .aboutBox {
+        flex: 0 0 calc(50% - 2rem);
+    }
+
+     .hamburger,
+     .close-hamburger{
+        display: block;
+    }
+
+    .navbar{
+        opacity: 0;
+        visibility: hidden;  
+
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color:var(--second-bg-color);
+        padding: 2rem;
+        box-shadow: 0 0 0 0 100vmax rgba(0, 0, 0, .5);
+        height: 100vh;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+
+    }
+    
+    .visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list{
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .home{
+        background-color: var(--bg-color);
+        background-image: none;
     }
 }
