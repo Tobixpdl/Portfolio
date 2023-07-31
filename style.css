@@ -571,11 +571,14 @@ span {
     background: var(--second-bg-color);
 }
 
-.mega-container{
-    padding-top: 5rem;
+.containerPortfolio{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem 80px;
+    font-size: 1.2rem;
 }
 
 .container{
@@ -586,14 +589,16 @@ span {
 }
 
 .box-portfolio{
+    flex: 0 0 calc(33.33% - 2rem);
     position: relative;
     width: 500px;
-    height: 290px;
+    height: 300px;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 
 .box-portfolio .content{
     position: absolute;
@@ -607,6 +612,7 @@ span {
     flex-direction: column;
     overflow: hidden;
     background-size: cover;
+    text-align: center;
 }
 
 .box-portfolio .content img{
@@ -884,6 +890,17 @@ cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
+
+    .containerPortfolio{
+        display: grid;
+    }
+
+    .box-portfolio{
+        width: 250px;
+        height: 150px;
+    }
+
+
 
     .aboutBox {
         flex: 0 0 calc(50% - 2rem);
