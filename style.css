@@ -39,6 +39,8 @@
 
 body {
     color: var(--text-color);
+    margin: 0;
+    padding: 0;
 }
 
 .header{
@@ -193,8 +195,6 @@ body {
     display: flex;
     justify-content: space-between;
     width: 345px;
-    height: 50px;
-
 }
 
 .home-content .btn-box::before{
@@ -228,6 +228,7 @@ body {
     z-index: 1;
     overflow: hidden;
     transition: .5s;
+    padding: 10px;
 }
 
 .btn-box a:hover{
@@ -854,7 +855,36 @@ cursor: pointer;
     }
 }
 
-@media screen and (max-width: 900px) {
+
+@media (max-width: 1200px)
+{
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 991px)
+{
+   .header{
+        padding: 2rem 4%;
+   }
+
+   section{
+        padding: 10rem 4% 2rem;
+   }
+
+   .home{
+        padding: 0 4%;
+   }
+
+   .footer{
+        padding: 2rem 4%;
+   }
+
+}
+
+@media screen and (max-width: 768px) {
+
     .aboutBox {
         flex: 0 0 calc(50% - 2rem);
     }
@@ -897,5 +927,48 @@ cursor: pointer;
     .home{
         background-color: var(--bg-color);
         background-image: none;
+    }
+
+    .home-imgHover{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 520px){
+    html{
+        font-size: 50%;
+    }
+
+    .home-content h1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-sci{
+        width: 160px;
+    }
+
+    .home-sci a{
+        width: 38px;
+        height: 38px;
+    }
+}
+
+@media (max-width: 462px){
+    .home-content h1{
+        font-size: 5.2rem;
+    }
+
+    .contact form .input-box .input-field{
+        width: 100%;
+    }
+
+    .footer{
+        flex-direction: column-reverse;
+    }
+
+    .footer p{
+        margin-top: 2rem;
     }
 }
