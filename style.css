@@ -120,7 +120,7 @@ body {
     background: url(images/layered-peaks-haikei.png) no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 100dvh;
     display: flex;
     align-items: center;
     padding: 0 10%;
