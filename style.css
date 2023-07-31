@@ -900,7 +900,13 @@ cursor: pointer;
         height: 150px;
     }
 
+    .home-content{
+        font-size: 50%;
+    }
 
+    .home-content p{
+        font-size: 12px;
+    }
 
     .aboutBox {
         flex: 0 0 calc(50% - 2rem);
@@ -957,9 +963,13 @@ cursor: pointer;
         font-size: 50%;
     }
 
-    .home-content h1{
-        display: flex;
-        flex-direction: column;
+    .about-content {
+        flex-wrap: nowrap;
+        font-size: 1rem;
+    }
+
+    .aboutBox i {
+        font-size: 30px;
     }
 
     .home-sci{
@@ -974,7 +984,7 @@ cursor: pointer;
 
 @media (max-width: 462px){
     .home-content h1{
-        font-size: 5.2rem;
+        font-size: 4.2rem;
     }
 
     .contact form .input-box .input-field{
