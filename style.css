@@ -85,7 +85,7 @@ body {
 .close-hamburger{
     display: none;
     border: 0;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     background-color: transparent;
     color:var(--main-color);
     cursor: pointer;
@@ -904,12 +904,34 @@ cursor: pointer;
         font-size: 50%;
     }
 
+    .home-content h3{
+        font-size: 1.9rem;
+    }
+
     .home-content p{
         font-size: 12px;
     }
 
+    .home-content .btn-box{
+        width: 250px;
+    }
+
+    .home-content .btn-box a{
+        width: 100px;
+        font-size: 10px;
+    }
+
     .aboutBox {
-        flex: 0 0 calc(50% - 2rem);
+        flex: 0 0 calc(60% - 2rem);
+    }
+
+    .skills{
+        padding: 0;
+    }
+
+    .imgSkills img{
+        width: 70px;
+        height: 70px;
     }
 
      .hamburger,
@@ -972,8 +994,16 @@ cursor: pointer;
         font-size: 30px;
     }
 
+    .home-content .btn-box{
+        width: 100%;
+        justify-content: center;
+        gap: 10px;
+    }
+
     .home-sci{
-        width: 160px;
+        width: 90%;
+        justify-content: center;
+        gap: 10px;
     }
 
     .home-sci a{
@@ -984,7 +1014,7 @@ cursor: pointer;
 
 @media (max-width: 462px){
     .home-content h1{
-        font-size: 4.2rem;
+        font-size: 3rem;
     }
 
     .contact form .input-box .input-field{
